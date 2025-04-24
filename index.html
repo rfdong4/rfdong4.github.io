@@ -3,24 +3,261 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My GitHub Page</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f4f4f9;
-        }
-        h1 {
-            color: #333;
-        }
-    </style>
+    <meta name="description" content="Ryan Dong - Computer Engineering Student & Embedded Systems Enthusiast at UC Santa Cruz">
+    <meta name="keywords" content="Ryan Dong, Computer Engineering, UCSC, Embedded Systems, FPGA, Computer Architecture">
+    <title>Ryan Dong | Computer Engineering</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>Welcome to My GitHub Page!</h1>
+    <header>
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Ryan Dong</a>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Ryan Dong</h1>
+                <h2>Computer Engineering Student & Embedded Systems Enthusiast</h2>
+                <p>Exploring computer architecture research, hardware design, and IoT solutions.</p>
+                <a href="#contact" class="btn btn-primary">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Education & Background</h3>
+                    <p>I'm a third-year Computer Engineering student at UC Santa Cruz, proudly maintaining a 3.9 GPA and consistently earning a place on the Dean's List. Currently, I serve as a Computer Architecture Researcher at UCSC, where I develop gem5 labs and contribute to education-impact research.</p>
+                    <p>Based in Elk Grove, California, I'm passionate about embedded systems, digital logic, and performance analysis. My academic and personal projects reflect my commitment to understanding both hardware and software aspects of computing systems.</p>
+                    <p>My goal is to leverage my expertise in computer architecture and embedded systems to develop innovative solutions that bridge theoretical concepts with practical applications.</p>
+                </div>
+                <div class="about-image">
+                    <img src="https://placehold.co/600x400/e2e8f0/1e40af?text=Ryan+Dong" alt="Ryan Dong">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/e2e8f0/1e40af?text=FPGA+Dino+Run" alt="FPGA-Based Dino Run Game">
+                    </div>
+                    <div class="project-content">
+                        <h3>FPGA-Based Dino Run Game</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge">SystemVerilog</span>
+                            <span class="tech-badge">Basys3 FPGA</span>
+                            <span class="tech-badge">VGA</span>
+                        </div>
+                        <p>Developed a Chrome's dinosaur game clone on a Basys3 FPGA using SystemVerilog, featuring a random obstacle generator, VGA display interface, and 7-segment score counter.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/e2e8f0/1e40af?text=Battle+Boats" alt="Battle-Boats">
+                    </div>
+                    <div class="project-content">
+                        <h3>Battle-Boats</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge">C</span>
+                            <span class="tech-badge">PIC32</span>
+                            <span class="tech-badge">GPIO</span>
+                        </div>
+                        <p>Created a Battleship-inspired game on PIC32 microcontrollers using C, implementing GPIO buttons/LED user interface and an automated gameplay algorithm for single-player experience.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/e2e8f0/1e40af?text=Weather+Station" alt="Weather Station">
+                    </div>
+                    <div class="project-content">
+                        <h3>Weather Station</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge">ESP32</span>
+                            <span class="tech-badge">Raspberry Pi</span>
+                            <span class="tech-badge">HTTP</span>
+                        </div>
+                        <p>Built a networked weather monitoring system using ESP32 and Raspberry Pi with continuous HTTP POST/GET capabilities, multiple sensor integration, and remote wttr.in API connectivity.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/e2e8f0/1e40af?text=Emulator" alt="Emulator">
+                    </div>
+                    <div class="project-content">
+                        <h3>Emulator</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge">C++</span>
+                            <span class="tech-badge">Binary Decoding</span>
+                        </div>
+                        <p>Designed a custom system emulator in C++ with modular CPU, GPU, memory, and I/O components, implementing binary decoding functionality for video game execution.</p>
+                    </div>
+                </div>
+                
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://placehold.co/600x400/e2e8f0/1e40af?text=Ultrasonic+Range+Finder" alt="Ultrasonic Range Finder">
+                    </div>
+                    <div class="project-content">
+                        <h3>Ultrasonic Range Finder</h3>
+                        <div class="tech-stack">
+                            <span class="tech-badge">HC-SR04</span>
+                            <span class="tech-badge">Temperature Sensor</span>
+                        </div>
+                        <p>Developed a precise ultrasonic range finder using HC-SR04 with a temperature sensor for dynamic speed-of-sound calibration, achieving measurement accuracy of less than 2 cm error.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-container">
+                <div class="skill-category">
+                    <h3>Languages</h3>
+                    <ul class="skill-list">
+                        <li>Python</li>
+                        <li>C</li>
+                        <li>C++</li>
+                        <li>Verilog</li>
+                        <li>JavaScript</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Tools & Frameworks</h3>
+                    <ul class="skill-list">
+                        <li>Jupyter Notebooks</li>
+                        <li>VSCode</li>
+                        <li>Google Colab</li>
+                        <li>Streamlit</li>
+                        <li>CoreML</li>
+                        <li>Git/GitHub</li>
+                        <li>Cursor AI</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Embedded Systems</h3>
+                    <ul class="skill-list">
+                        <li>Basys3</li>
+                        <li>PIC32</li>
+                        <li>ESP32</li>
+                        <li>Raspberry Pi</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Data Science & ML</h3>
+                    <ul class="skill-list">
+                        <li>pandas</li>
+                        <li>NumPy</li>
+                        <li>scikit-learn</li>
+                        <li>Data preprocessing</li>
+                    </ul>
+                </div>
+                
+                <div class="skill-category">
+                    <h3>Circuit Design</h3>
+                    <ul class="skill-list">
+                        <li>Oscilloscopes</li>
+                        <li>Signal generators</li>
+                        <li>VNAs</li>
+                        <li>Digital logic design</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <ul class="contact-details">
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <a href="mailto:rfdong@ucsc.edu">rfdong@ucsc.edu</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <a href="tel:+19165825445">+1 916-582-5445</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-linkedin"></i>
+                            <a href="https://linkedin.com/in/ryan-dong-a226452b2" target="_blank">linkedin.com/in/ryan-dong-a226452b2</a>
+                        </li>
+                        <li>
+                            <i class="fab fa-github"></i>
+                            <a href="https://github.com/rfdong4" target="_blank">github.com/rfdong4</a>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Elk Grove, CA</span>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links">
+                <a href="https://linkedin.com/in/ryan-dong-a226452b2" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/rfdong4" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="mailto:rfdong@ucsc.edu"><i class="fas fa-envelope"></i></a>
+            </div>
+            <p class="footer-text">© 2023 Ryan Dong. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
